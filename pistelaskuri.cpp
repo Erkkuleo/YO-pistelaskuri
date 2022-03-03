@@ -4,16 +4,8 @@ using namespace std;
 long double x;
 long double y;
 long double z;
-int s;
-int L = 90;
-int E = 76;
-int M = 65;
-int c = 50;
-int B = 37;
-int A = 26;
-int pi = 24;
-//int i = 20;
-//int mi = 15; 
+int o = y;
+
 void alku() {
     cout << "saamasi pisteet: \n";
     cin >> x;
@@ -24,6 +16,7 @@ void lasku(){
     z = (120 / y) * x;
 }
 void ulostus() {
+
     if(90<=z){
         cout << "L - laudatur";
     }
@@ -42,15 +35,35 @@ void ulostus() {
     else if (36>=z && z>26) {
         cout << "A - approbatur";
     }
-    else if (25>=z && z>24) {
+    else if (25>=z) {
         cout << "I - improbatur";
     }
+    else {
+
+    }
 }
+
+void overWrite() {
+    x = 0;
+    y = 0;
+    z = 0;
+}
+
 int main() {
-    alku();
-    lasku();
-    cout << "pisteesi:\n";
-    cout << z;
-    cout << "\n";   
-    ulostus();
+    while (true) {
+        alku();
+        if (y == 0) {
+            cout << "ERROR - Devider can't be zero || a letter \n";
+            break;
+        } 
+        else {
+            lasku();
+            cout << "pisteesi:\n";
+            cout << z;
+            cout << "\n";   
+            ulostus();
+            cout << "\n";
+            overWrite();
+        } 
+    } 
 }
