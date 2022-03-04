@@ -10,7 +10,7 @@ using namespace std;
 long double x;
 long double y;
 long double z;
-int o = y;
+int o = 1;
 
 void alku() {
     cout << "saamasi pisteet: \n";
@@ -41,35 +41,35 @@ void ulostus() {
     else if (36>=z && z>26) {
         cout << "A - approbatur";
     }
-    else if (25>=z) {
-        cout << "I - improbatur";
-    }
     else {
-
+        cout << "I - improbatur";
     }
 }
 
 void overWrite() {
-    x = 0;
-    y = 0;
-    z = 0;
+    x = 1;
+    y = 1;
+    z = 1;
 }
 
 int main() {
-    while (true) {
+      hemmo:
         alku();
+    while (true) {
         if (y == 0) {
             cout << "ERROR - Devider can't be zero || a letter \n";
-            break;
+            y = 1;
+            goto hemmo;
         } 
         else {
+            alku();
             lasku();
             cout << "pisteesi:\n";
             cout << z;
             cout << "\n";   
             ulostus();
             cout << "\n";
-            overWrite();
-        } 
+        }
+        
     } 
 }

@@ -1,4 +1,4 @@
 # YO-pistelaskuri
-YO-pistelaskuri on laskuri, jolla suhteutat tehtävästäsi saamat pisteet viimeisimmän äidinkielen kokeen tuloksiin. 
+YO-pistelaskuri on laskuri, jolla suhteutat tehtävästäsi saamat pisteet viimeisimmän äidinkielen ylioppilaskokeen tuloksiin. 
 
 Creator: Erkka Kiukkonen
